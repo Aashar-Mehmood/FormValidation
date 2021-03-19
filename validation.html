@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aashar Mehmood 18-cp-33</title>
+  <link rel="stylesheet" href="./Validation.css">
+</head>
+<body>
+  <header>
+    <h2>Form Validation and Responsive Web Design</h2>
+  </header>
+  <main>
+    <form action="submit">
+    <section>
+    <div class="col" id="second">
+      <label>Your Name</label> <span id="nameError"></span>
+      <input type="text" placeholder="Aashar Mehmood" autocomplete>
+      <label>Father Name</label> <span id="fatherNameError"></span>
+      <input type="text" placeholder="Asghar Mehmood">
+      <label>Date of Birth</label> <span id="dateError"></span>
+      <input type="date" placeholder="12-Oct-1998">
+      <label>Address</label><span id="addressError"></span>
+      <textarea placeholder="Village Nalla Mirzian, Post Office Nara, Tehsil Kahuta, District Rawalpindi"></textarea>
+      <label >Email Address</label><span id="emailError"></span>
+      <input type="text" placeholder="example@gmail.com">
+      
+    </div>
+    <div class="col" id="third">
+      <label>Contact</label><span id="contactError"></span>
+      <input type="number">
+      <label>CNIC</label><span id="cnicError"></span>
+      <input type="number" id="cnic">
+      <label>Education</label><span id="educationError"></span>
+      <select name="education" id="edu">
+      	<option value="none">Select Education</option>
+        <option value="matric">Matric</option>
+        <option value="pre-eng">Pre-Engineering</option>
+        <option value="pre-med">Pre-Medical</option>
+        <option value="ics">ICS</option>
+        <option value="BS">BS</option>
+        <option value="MS">MS</option>
+        <option value="PHD">PHD</option>
+      </select>
+      <label>Bio</label><span id="bioError"></span>
+      <textarea id="bio" placeholder="Tell us about your selft"></textarea>
+      <div class="btns">
+        <button id="submit" type="submit">Submit</button>
+        <button id="reset" type="reset">Reset</button>
+      </div>
+    </div>
+  </section>
+</form>
+  <footer>
+    <div class="copy">
+      <h2>Copy Right &copy;aasharmehmood3@gmail.com</h2>
+    </div>
+  </footer>
+<script src="./app.js"></script>
+</body>
+</html>

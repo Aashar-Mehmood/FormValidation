@@ -1,0 +1,106 @@
+*{
+  box-sizing: border-box;
+}
+html, body{
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family:'Times New Roman', Arial, Helvetica, sans-serif;
+
+}
+
+header{
+  width: 100%;
+  padding: 20px 0;
+  background-color: rgb(75, 250, 168);
+  text-align: center;
+}
+form{
+  width: 100%;
+  min-height: 500px;
+  padding: 30px 0;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left, rgb(100, 230, 100), skyblue );
+}
+form section{
+  width: 60%;
+  margin:0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2em;
+  grid-template-rows: auto;
+  border: 2px solid black;
+}
+div#second, div#third{
+  display: flex;
+  flex-flow: column;
+}
+
+
+div#second input, div#third input, div#third select{
+  margin:4px 0;
+}
+div#second label, div#third label{
+  margin-top: 20px;
+  display: inline;
+}
+div#second textarea, div#third textarea{
+  min-height: 100px;
+}
+
+footer{
+  width: 100%;
+  padding: 45px 0;
+  background-color: rgb(235, 208, 136);
+  text-align: center;
+}
+
+div#third select{
+  height: 32px;
+}
+div#third div {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 20px;
+}
+div#third div button{
+  padding: 9px 30px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-left: 10px;
+  transition: all 0.7 ease;
+}
+div#third div button:hover{
+  background-color:green;
+  color: white;
+}
+body input{
+  height: 32px;
+}
+
+/* for mobile devices */
+@media screen and (max-width:480px){
+  form section{
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;    
+  }
+  
+  div#second label, div#third label{
+    margin-top: 18px;
+  }
+}
+
+
+
+
+
+
+
+
+
