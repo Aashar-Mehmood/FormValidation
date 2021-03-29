@@ -8,7 +8,8 @@ const RESET_BTN = document.getElementById('reset');
 const allInputs = document.querySelectorAll('form section input');
 const allTextAreas = document.querySelectorAll('form section textarea');
 const select = document.querySelector('select#edu');
-
+const allSpans = document.querySelectorAll('form span');
+const allLabels = document.querySelectorAll('form label');
 //event listener for submit button
 SUBMIT_BTN.addEventListener('click', (e) => {
 
@@ -98,7 +99,13 @@ RESET_BTN.addEventListener('click', ()=>{
   allInputs.forEach((inp)=>{
     inp.value = ' ';
   });
-  textAreas.forEach((textarea)=>{
-    textArea.value = ' ';
+  allTextAreas.forEach((textarea)=>{
+    textarea.value = ' ';
+  });
+  allSpans.forEach((element)=>{
+    element.innerHTML = '';
+  });
+  allLabels.forEach((label)=>{
+    label.style.color = 'black';
   })
 });

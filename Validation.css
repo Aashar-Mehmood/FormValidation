@@ -19,7 +19,7 @@ header{
 form{
   width: 100%;
   min-height: 500px;
-  padding: 30px 0;
+  padding: 100px 0;
   justify-content: center;
   align-items: center;
   background: linear-gradient(to left, rgb(100, 230, 100), skyblue );
@@ -32,7 +32,13 @@ form section{
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 2em;
   grid-template-rows: auto;
-  border: 2px solid black;
+
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4.5px );
+  -webkit-backdrop-filter: blur( 4.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
 }
 div#second, div#third{
   display: flex;
@@ -41,7 +47,7 @@ div#second, div#third{
 
 
 div#second input, div#third input, div#third select{
-  margin:4px 0;
+  margin: 4px 0;
 }
 div#second label, div#third label{
   margin-top: 20px;
@@ -49,6 +55,7 @@ div#second label, div#third label{
 }
 div#second textarea, div#third textarea{
   min-height: 100px;
+  border-radius: 8px;
 }
 
 footer{
@@ -58,9 +65,7 @@ footer{
   text-align: center;
 }
 
-div#third select{
-  height: 32px;
-}
+
 div#third div {
   max-width: 80%;
   margin: 0 auto;
@@ -74,15 +79,30 @@ div#third div button{
   margin-right: 10px;
   margin-left: 10px;
   transition: all 0.7 ease;
+  border-radius: 10px;
 }
 div#third div button:hover{
   background-color:green;
   color: white;
 }
-body input{
-  height: 32px;
+body input, div#third select{
+  height: 42px;
+  border: none;
+  border-radius: 8px;
 }
 
+@media screen and (max-width: 1024px){
+  form section{
+    width: 80%;
+  }
+}
+
+@media screen and (width: 768px){
+  div#third div{
+    margin: 0;
+    margin-top: 20px;
+  }
+}
 /* for mobile devices */
 @media screen and (max-width:480px){
   form section{
